@@ -6,19 +6,21 @@ class Person {
   }
 
   greet() {
-    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
   }
 }
 
 // Employee Class
 class Employee extends Person {
   constructor(name, age, jobTitle) {
-    super(name, age); // Call Person constructor
+    super(name, age); // Call the Person constructor
     this.jobTitle = jobTitle;
   }
 
   jobGreet() {
-    return `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`;
+    console.log(
+      `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`
+    );
   }
 }
 
